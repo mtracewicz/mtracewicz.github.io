@@ -1,53 +1,42 @@
-<!DOCTYPE html>
+<html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello, World!</title>
-  <link
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <style>
-  .text-giant{
-    font-size: 10vh;
-  }
-  </style>
+<meta charset="utf-8" /> 
+<link rel="stylesheet" type="text/css" href="base.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Tracewicz</title>
 </head>
-<body style="padding: 5em; background-color: darkcyan;">
-  <div class="jumbotron text-center" style='padding: 5vh;margin:5em 30vw 5vh 30vw;'>
-    <h2>How much does it cost?</h2>
-    <form>
-      <div class="form-group">
-        <label>Price</label>
-        <input type="text" class="form-control" name="Price" value="10" />
-      </div>
-      <div class="form-group">
-        <label for='Quantity'>
-          Quantity
-          <span class="label label-primary"></span>
-        </label>
-        <input type="range" class="form-control" name="Quantity" value="1" min='1' max ='10' step='1'/>
-      </div>
-    </form>
-    <div class="text-right text-giant total"></div>
-  </div>
-  <script>
-    let priceInput = document.querySelector("[name='Price']");
-    let quantityInput = document.querySelector("[name='Quantity']");
-    let label = document.querySelector('.label');
-    let total = document.querySelector('.total');
-    updateLabelAndCalculateTotal();
-    function calculateTotal(){
-      let resault = priceInput.value*quantityInput.value;
-      total.innerText = '$'+String(resault);
-    }
-    function updateLabel(){
-      label.innerText = quantityInput.value;
-    }
-    function updateLabelAndCalculateTotal(){
-      updateLabel();
-      calculateTotal();
-    }
-    priceInput.addEventListener('input',calculateTotal);
-    quantityInput.addEventListener('input',updateLabelAndCalculateTotal);
-  </script>
+<body>
+<ul class="nav">
+  <li class="navl"><a href="#index">Home</a></li>
+  <li class="navl"><a href="#omnie">O mnie</a></li>
+  <li class="navl"><a href="#studia">Studia</a></li>
+  <li class="navl"><a href="#kontakt">Kontakt</a></li>
+</ul>
+<a name="index"></a>
+<div class="bg1"></div> 
+<p class="p1"><a name="omnie"> O MNIE</a></p>
+<div class="row">
+<div class="col">
+<img src="pic.jpg">
+</div>
+<div class="col">
+<p class="p2">Nazywam się Michał Tracewicz i jestem studentem trzeciego roku informatyki inżynierskiej
+na Wydziale Matematyki i Informatyki Uniwersytetu Mikołaja Kopernika w Toruniu.Pochodzę z Kolbud koło Gdańska. Gdzie ukończyłem I Liceum Ogólnokształcące
+im. Mikołaja Kopernika. Od najmłodszych lat interesowałem się komputerami. Od gimnazjum moim wymażomnym zawodem był programista, studia, które wybrałem 
+są pierwszym znaczącym krokiem w kierunku zrealizowania tego marzenia.</p></div>
+</div>
+</p>
+<p class="p1"><a name="studia">Studia</a></p>
+<p class="p4">Przydatne Linki:</p>
+<ul class="link">
+	<li><a href=http://www.mat.umk.pl/documents/10180/1171411/INFINZ_s1_17-18_+plan.pdf/978e7a39-04c6-48f4-a345-8ae3d0878c5e target="_blank" class="stud" >Program studiów</a></li>
+	<li><a href=http://www.mat.umk.pl/ target="_blank" class="stud">Strona Wydziału</a></li>
+	<li><a href=http://www.umk.pl/ target="_blank" class="stud">Strona Uniwersytetu</a></li>
+</ul>
+<p class="p1"><a name="kontakt">Kontakt</a></p>
+<p class="p3">Telefon: 570-939-969<br>E-mail: m.tracewicz@gmail.com<br>
+<a href=http://github.com/mtracewicz target="_blank" class="stud">github.com</p> 
+<?php include 'main.php';?>
 </body>
+<footer>Michał Tracewicz 2017</footer>
+</html>
