@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello, World!</title>
+  <link
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+  .text-giant{
+    font-size: 10vh;
+  }
+  </style>
+</head>
+<body style="padding: 5em; background-color: darkcyan;">
+  <div class="jumbotron text-center" style='padding: 5vh;margin:5em 30vw 5vh 30vw;'>
+    <h2>How much does it cost?</h2>
+    <form>
+      <div class="form-group">
+        <label>Price</label>
+        <input type="text" class="form-control" name="Price" value="10" />
+      </div>
+      <div class="form-group">
+        <label for='Quantity'>
+          Quantity
+          <span class="label label-primary"></span>
+        </label>
+        <input type="range" class="form-control" name="Quantity" value="1" min='1' max ='10' step='1'/>
+      </div>
+    </form>
+    <div class="text-right text-giant total"></div>
+  </div>
+  <script>
+    let priceInput = document.querySelector("[name='Price']");
+    let quantityInput = document.querySelector("[name='Quantity']");
+    let label = document.querySelector('.label');
+    let total = document.querySelector('.total');
+    updateLabelAndCalculateTotal();
+    function calculateTotal(){
+      let resault = priceInput.value*quantityInput.value;
+      total.innerText = '$'+String(resault);
+    }
+    function updateLabel(){
+      label.innerText = quantityInput.value;
+    }
+    function updateLabelAndCalculateTotal(){
+      updateLabel();
+      calculateTotal();
+    }
+    priceInput.addEventListener('input',calculateTotal);
+    quantityInput.addEventListener('input',updateLabelAndCalculateTotal);
+  </script>
+</body>
