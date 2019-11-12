@@ -1,7 +1,6 @@
 @media (min-width:800px){
 body, html {
     height: 100%;
-	font-family:Fantasy;
 }
 .nav {
 	position:fixed;
@@ -114,7 +113,6 @@ img{
 @media (max-width: 800px) {
 body, html {
 	height: 100%;
-	font-family:Fantasy;
 }
 .nav {
 	position:fixed;
