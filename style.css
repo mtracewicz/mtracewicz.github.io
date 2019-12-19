@@ -108,10 +108,22 @@ footer p {
   margin-left: 3%;
 }
 @media(max-width:800px){
+  #gh{
+    margin: 2% 1% 0% 0%;
+  }
+  #ic{
+    margin: 2% 0% 0% 2%;
+  }
+  h1 {
+    margin: 2% 0% 0.8% 0%;
+  }
 .hero {
     max-height: 300px;
   }
 .hero p{
   top: 25%;
+}
+footer p {
+  display: block;
 }
 }
