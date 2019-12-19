@@ -123,7 +123,8 @@ footer p {
 .hero p{
   top: 25%;
 }
-footer p {
-  display: block;
+#Atribution{
+  float:left;
+  margin-left: 3%;
 }
 }
