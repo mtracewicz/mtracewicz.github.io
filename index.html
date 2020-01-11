@@ -1,41 +1,167 @@
 <!DOCTYPE html>
-<html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>Michał Tracewicz</title>
-  </head>
-  <body>
-      <header>
-        <span class = "topline"></span>
-        <span class = "navbar">
-          <img id = "ic" src ="icon.png" alt = "icon" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"/>
-          <h1>Michał Tracewicz</h1>
-          <a href="https://github.com/mtracewicz"><img id = "gh" src ="gh.png" alt = "github"/></a>
-        </span>
-      </header>
-      <div class = "hero">
-        <p>
-          <img src ="logo.png" alt = "icon"/>
-        </p>
+<html lang="en">
+
+<head>
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Michał Tracewicz</title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/hover/hover.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Responsive css -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+  <div id="header" class="home">
+
+    <div class="container">
+      <div class="header-content">
+        <h1>I'm <span class="typed"></span></h1>
+
+        <ul class="list-unstyled list-social">
+          <li><a href = "https://github.com/mtracewicz"><img src="images/gh.png"></a></li>
+          <li><a href = "https://gitlab.com/mtracewicz"><img src="images/gl.svg"></a></li>
+        </ul>
       </div>
-      <div class="main">
+    </div>
+  </div>
+  <!-- End section header -->
+  <!-- start section about us -->
+  <div id="about" class="paddsection">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-lg-4 ">
+          <div class="div-img-bg">
+            <div class="about-img">
+              <img src="images/me.jpeg" class="img-responsive" alt="me">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="about-descr">
+
+            <p class="p-heading">I'am junior .net developer and </br>Computer Science student Student at UMK in Toruń </p>
+            <p class="separator"></p>
+
+          </div>
+
+        </div>
       </div>
-      <footer>
-        <p id ="Contact">
-          Informacje kontaktowe:</br>
-          Telefon: 570-939-969</br>
-          E-mail: m.tracewicz@gmail.com</br>
-          Github: <a href = "https://github.com/mtracewicz">github.com/mtracewicz</a>
-        </p>
-        <p id ="Atribution">
-          Favicon pochodzi ze strony: <a href = "https://favicon.io/">favicon.io</a></br>
-          Ikona github pochodzi ze stronu: <a href = "https://icons8.com/">icons8.com</a></br>
-          Zdjęcie pochodzi ze strony: <a href = "https://pexels.com/">pexels.com</a></br>
-          © 2019 Michał Tracewicz
-        </p>
-      </footer>
-  </body>
+    </div>
+  </div>
+  <!-- end section about us -->
+
+
+  <!-- start section services -->
+  <div id="services">
+
+    <div class="container">
+    <h2>Technologies I work with</h2>
+        <div class="services-carousel owl-theme">
+
+          <div class="services-block">
+            <img src="images/icons8-c-sharp-logo.svg" style="height:4vh;">
+            <span>C#</span>
+
+          </div>
+
+          <div class="services-block">
+
+            <img src="images/icons8-python.svg" style="height:4vh;">
+            <span>PYTHON</span>
+          </div>
+
+          <div class="services-block">
+            <img src="images/icons8-javascript.svg" style="height:4vh;">
+            <span>JAVA SCRIPT</span>
+
+          </div>
+
+          <div class="services-block">
+
+            <img src="images/icons8-docker.svg" style="height:4vh;">
+            <span>DOCKER</span>
+
+          </div>
+
+          <div class="services-block">
+
+            <img src="images/icons8-git.svg" style="height:4vh;">
+            <span>GIT</span>
+
+          </div>
+
+        </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- start section footer -->
+  <div id="footer" class="text-center">
+    <div class="container">
+        <ul class="contact-details">
+          <li><span>570-939-969</span></li>
+          <li><span>m.tracewicz@gmail.com</span></li>
+          <li><span><a href = "https://github.com/mtracewicz"><img src="images/gh.png"></a><a href = "https://gitlab.com/mtracewicz"><img src="images/gl.svg"></a></span></li>
+        </ul>
+        <p>&copy; Copyrights Michał Tracewicz. All rights reserved.</p>
+      </div>
+
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+
+    </div>
+  </div>
+  <!-- End section footer -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/typed/typed.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+
 </html>
