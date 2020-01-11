@@ -83,7 +83,6 @@ $(document).ready(function() {
         responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
       });
   }else{
-    $('.services-carousel').owlCarouse({});
     const tech = document.querySelectorAll(".services-block");
     tech.forEach(i => i.classList.add('text-center'));
   }
