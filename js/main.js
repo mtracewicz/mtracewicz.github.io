@@ -61,7 +61,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Michał Tracewicz.","Developer.","Programer.","Student."],
+      strings: ["Michał Tracewicz.","Developer.","Programmer.","Student."],
       typeSpeed: 100,
       loop: true,
     });
