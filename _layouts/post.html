@@ -14,7 +14,7 @@ layout: default
 
 <span class="post-date">
   {{ site.data.settings.post_date_prefix }}
-  {{page.date}}
+  {{page.date | date: "%d.%m.%Y"}}
   by
   {% if page.author %}
     {{ page.author }}
