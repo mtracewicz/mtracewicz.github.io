@@ -12,7 +12,7 @@ blog({
   links: [
     { title: "Email", url: "mailto:m.tracewicz@gmail.com" },
     { title: "GitHub", url: "https://github.com/mtracewicz" },
-    { title: "About", url: "https://localhost:8000/about" },
+    { title: "About", url: "https://mtracewicz.deno.dev/about" },
   ],
   favicon: "favico.png",
   theme: "auto",
