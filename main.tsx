@@ -14,7 +14,7 @@ blog({
     { title: "GitHub", url: "https://github.com/mtracewicz" },
     { title: "About", url: "https://mtracewicz.deno.dev/about" },
   ],
-  favicon: "favico.png",
+  favicon: "favicon.png",
   theme: "dark",
   dateStyle: "long",
 });
