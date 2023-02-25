@@ -20,5 +20,4 @@ blog({
   ],
   favicon: "favicon.png",
   theme: "dark",
-  dateStyle: "long",
 });
