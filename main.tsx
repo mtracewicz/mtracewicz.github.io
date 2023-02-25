@@ -15,6 +15,6 @@ blog({
     { title: "About", url: "https://mtracewicz.deno.dev/about" },
   ],
   favicon: "favico.png",
-  theme: "auto",
+  theme: "dark",
   dateStyle: "long",
 });
