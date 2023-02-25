@@ -14,7 +14,6 @@ blog({
   avatarClass: "border-hidden",
   author: "Michał Tracewicz",
   links: [
-    { title: "Email", url: "mailto:m.tracewicz@gmail.com" },
     { title: "GitHub", url: "https://github.com/mtracewicz" },
     { title: "About", url: "https://mtracewicz.deno.dev/about" },
   ],
