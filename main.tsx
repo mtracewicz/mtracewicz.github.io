@@ -1,7 +1,11 @@
 /** @jsx h */
 
 import blog from "blog";
+
+// This imports add syntax highlighting, bellow link is a list of available ones
+// https://unpkg.com/browse/prismjs@1.29.0/components/
 import "https://esm.sh/prismjs@1.28.0/components/prism-rust?no-check";
+import "https://esm.sh/prismjs@1.28.0/components/prism-csharp?no-check";
 
 blog({
   title: "mtracewicz",
